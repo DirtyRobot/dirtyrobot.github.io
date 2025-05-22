@@ -1,0 +1,89 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+.chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.chakra-petch-regular {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.chakra-petch-medium {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.chakra-petch-semibold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-barcode-128-text-regular {
+    font-family: "Libre Barcode 128 Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+$sans-serif         : "Chakra Petch", sans-serif;
+$monospace          : "Libre Barcode 128 Text", Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+
+a {
+    text-decoration: none;
+}
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+html {
+    background-color: black;
+}
+
+.masthead {
+    border-bottom: 0;
+}
+
+.greedy-nav {
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.site-logo img {
+    max-height: 3rem;
+}
+
+.author__avatar img {
+    max-width: 110px;
+    border-radius: 0;
+    border: 0;
+}
+
+.sidebar li {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 400;
+}
+
+.page__hero--overlay {
+    padding: 13em 0;
+}
+
+.archive__item-teaser {
+    max-height: 250px;
+}
