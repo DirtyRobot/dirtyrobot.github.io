@@ -25,7 +25,7 @@ feature_row2:
     title: "V1"
     # excerpt: "The first version of our brand identity."
     url: "/branding-v1"
-  - image_path: /assets/images/DirtyRobot.can.png
+  - image_path: /assets/images/DirtyRobot.canlabel.png
     alt: "Brand V2"
     title: "V2"
     # excerpt: "The second version of our brand identity."
