@@ -4,8 +4,6 @@ layout: splash
 permalink: /
 header:
   overlay_image: /assets/images/brew.rig.jpg
-# intro: 
-#   - excerpt: ' '
 feature_row:
   - title: "Hardware"
   - image_path: /assets/images/IMG_0067.JPG

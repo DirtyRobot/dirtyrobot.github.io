@@ -5,48 +5,12 @@ search: false
 
 @charset "utf-8";
 
-.chakra-petch-light {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-  
-.chakra-petch-regular {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.chakra-petch-medium {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-  
-.chakra-petch-semibold {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-  
-.chakra-petch-bold {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.libre-barcode-128-text-regular {
-    font-family: "Libre Barcode 128 Text", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}  
-
-$sans-serif         : "Chakra Petch", sans-serif;
-$monospace          : "Libre Barcode 128 Text", Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
-
 a {
     text-decoration: none;
 }
+
+$sans-serif         : "Chakra Petch", sans-serif;
+$monospace          : "Libre Barcode 128 Text", Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -80,10 +44,39 @@ html {
     font-weight: 400;
 }
 
-.page__hero--overlay {
-    padding: 13em 0;
+.archive {
+    float: left;
+    width: 100%;
+}
+
+.responsive-video-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: unset;
+    height: fit-content;
+    iframe,
+    object,
+    embed {
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 .archive__item-teaser {
-    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($small) {
+      max-height: 10em;
+    }
+
+    @include breakpoint($medium) {
+      max-height: 10em;
+    }
+}
+
+.page__hero--overlay {
+    padding: 13em 0;
 }
